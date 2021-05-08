@@ -36,5 +36,5 @@ The client is just a simple alpine based image containing a script [slow.js](cli
 that recrates the problem, by posting data to the server and measuring the time it took.
 
 ```bash
-node server.js
+node slow.js
 ```
