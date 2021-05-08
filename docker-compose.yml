@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  server:
+    build: server
+    hostname: server
+    networks:
+      - internal
+
+  client:
+    build: client
+    hostname: client
+    command: tail -f /dev/null
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
