@@ -25,3 +25,16 @@ docker exec -it tcp_40ms_server_1 /bin/sh # For server
 ```
 
 > Notice that the hostname of both containers are server/client respectively.
+
+### Server
+
+The server runs a simple [express server](server/server.js) that listens on port `8080`
+
+### Client
+
+The client is just a simple alpine based image containing a script [slow.js](client/slow.js)
+that recrates the problem, by posting data to the server and measuring the time it took.
+
+```bash
+node server.js
+```
