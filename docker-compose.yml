@@ -3,6 +3,10 @@ services:
   server:
     build: server
     hostname: server
+    init: true
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
     networks:
       - internal
 
@@ -10,6 +14,9 @@ services:
     build: client
     hostname: client
     command: tail -f /dev/null
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
     networks:
       - internal
 

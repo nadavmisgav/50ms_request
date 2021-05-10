@@ -5,7 +5,7 @@ var start;
 
 async function uploadFile(filename) {
   const req = http.request(
-    { hostname: "server", port: 8080, method: "POST" },
+    { hostname: "server", port: 8000, method: "POST" },
     (res) => {
       console.log("Time elapsed:", new Date() - start, "milliseconds");
     }
