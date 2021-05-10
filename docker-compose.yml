@@ -2,6 +2,7 @@ version: "3.9"
 services:
   server:
     build: server
+    container_name: server
     hostname: server
     init: true
     cap_add:
@@ -12,6 +13,7 @@ services:
 
   client:
     build: client
+    container_name: client
     hostname: client
     command: tail -f /dev/null
     cap_add:
