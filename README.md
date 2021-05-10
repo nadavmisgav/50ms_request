@@ -27,7 +27,7 @@ docker exec -it client /bin/sh # For client
 
 ### Server
 
-The server runs a simple [python server](server/server.py) that listens on port `8000`
+The server runs a simple HTTP server that listens on port `8000`
 
 > IMPORTANT: Do not look at the server implementation (`server.py`) it contains spoilers.
 
