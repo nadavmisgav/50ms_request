@@ -40,6 +40,8 @@ that recrates the problem, by posting data to the server and measuring the time 
 node slow.js
 ```
 
+You are allowed to examine this script.
+
 ## Solution
 
 The solution can be found [here](SOLUTION.md).
