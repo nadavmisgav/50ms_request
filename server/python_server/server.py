@@ -25,7 +25,7 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(bytes(message, "utf8"))
 
 
-if __name__ == '__main__':
+def run_server():
     server = HTTPServer(('', 8000), HTTPRequestHandler)
     server.socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_QUICKACK, 0)
     server.serve_forever()
