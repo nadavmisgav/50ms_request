@@ -2,6 +2,12 @@
 
 This repo is a live demo of the puzzle `The Case of the 50ms request` from [wizardzines's mysteries](https://mysteries.wizardzines.com/), thus allowing for people to investigate the problem and try to debug it themselves.
 
+## Problem 
+You have a program that uploads very tiny files to a server. You notice in your monitoring that these file uploads are a little slow — maybe about 50ms on average.
+The uploading code is in Javascript, so you write a tiny Javascript program called [slow.js](client/slow.js) to reproduce the problem so you can easily investigate it. The program prints out the time elapsed for the request in milliseconds.
+
+You have a choice: you can SSH to the client machine (which is making the requests), or the server machine (which is serving the requests).
+
 ## Getting started
 
 ### Compose container
